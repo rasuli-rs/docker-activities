@@ -18,4 +18,4 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return 'Hello World from Docker! I have been seen {} times.\n'.format(count)
+    return 'Hello World from Docker! Testing to see if the changes are seen instantly on the web browser as the code is now mounted on to the container using volume. I have been seen {} times(this is the amount of time the browser is refreshed).\n'.format(count)
